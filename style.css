@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1524;
+  line-height: 30px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-icon {
+  position: relative;
+}
+
+.app-icon::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("image/icon.png");
+  background-size: 60px;
+  left: 80px;
+  top: 40px;
+}
+
+#landing-section {
+  position: relative;
+  text-align: left;
+  padding-top: 135px;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+
+}
+
+#landing-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 900px;
+  height: 461px;
+  background-image: url("image/left-background.png");
+  background-size: 900px 461px;
+  opacity: 12%;
+}
+
+.container {
+  position: relative;
+  max-width: 1128px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+}
+
+.page-text {
+  padding-top: 88px;
+  padding-right: 48px;
+  min-width: 448px;
+  max-width: 588px;
+  margin-left: 70px;
+}
+
+
+#main-heading {
+  font-family: 'Playfair Display';
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 24px;
+}
+
+#para {
+  font-family: 'Heebo', sans-serif;
+  color: rgb(185, 187, 189);
+  margin-bottom: 40px;
+}
+
+.buttons {
+  max-width: 400px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-flex;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  min-width: 170px;
+  padding: 16px 32px;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  justify-content: center;
+  line-height: 16px;
+}
+
+.button:first-child {
+  margin-right: 16px;
+  background-color: #273C5A;
+}
+
+.button:last-child {
+  background-color: #F9425F;
+  box-shadow: 0 8px 16px rgba(249, 66, 95, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: #f1556a;
+}
+
+.page-phone {
+  position: relative;
+  left: 250px;
+}
+
+.app {
+  position: relative;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  border-style: none;
+}
+
+.hero-app-dots-1 {
+  top: 15px;
+  left: -108px;
+}
+
+.feature-mean-title {
+  clear: both;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+.feature-mean-title::before {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background: url("image/sec-icon.png");
+  background-size: 54px;
+  left: -60px;
+  top: 1px;
+}
+
+#second-section {
+  padding: 10%;
+}
+
+#feature-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 360px;
+  min-width: 300px;
+  padding: 60px 30px;
+  text-align: left;
+  margin: 0 12px;
+}
+
+.icon-transform:hover {
+  transform: rotate(180deg);
+}
+
+.feature-card-heading {
+  margin-top: 0px;
+  font-size: 28px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  line-height: 34px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.feature-card-desc {
+  line-height: 25px;
+  font-weight: 500;
+  color: rgb(148, 144, 144);
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+
+}
+
+.site-footer {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  color: #556B8B;
+  width: 100%;
+  height: 200px;
+}
+
+.footer-container {
+  padding: 25px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(145, 139, 139);
+  padding: 20px 12px;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: #273C5A;
+  background: linear-gradient(to right, rgba(39, 60, 90, 0.1) 0, rgba(39, 60, 90, 0.6) 50%, rgba(39, 60, 90, 0.1) 100%);
+}
+
+.footer-brand {
+  width: 70%;
+  float: left;
+}
+
+.footer-links {
+  width: 30%;
+  float: right;
+}
+
+.footer-copyright {
+  width: 100%;
+  float: right;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 18px;
+}
